@@ -20,12 +20,8 @@ balas_simples = pilas.actores.Bala
 monos = []
 
 # Funciones
-def mono_destruido(disparo,enemigo):
-	enemigo.eliminar()
-	disparo.eliminar()
-
-	puntos.escala = 0
-	puntos.escala = pilas.interpolar(1,duracion=0,5,tipo=]'rebote_final')
+def mono_destruido():
+    pass
 
 
 def crear_mono():
@@ -70,13 +66,6 @@ def crear_mono():
     else:
         return True
 
-def perder(torreta,enemigo):
-	global fin_del_juego
-	enemigo.sonreir()
-	torreta.eliminar()
-	pilas.mundo.tarea.eliminar_todas()
-	fin_de_juego= True
-	pilas.avisar("GAME OVER. Consigue ")
 
 # Añadir la torreta del jugador
 
